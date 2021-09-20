@@ -24,6 +24,7 @@
     "curly": ["error", "multi-line"],
     "eqeqeq": "error",
     "no-trailing-spaces": "error",
+    "eol-last": "error",
     "block-spacing": ["error", "always"],
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
     "no-multi-spaces": "error",
