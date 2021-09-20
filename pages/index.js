@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Link from 'next/link';
+import Content from 'components/content';
 
 const Container = styled.div`
   color: blue;
@@ -12,8 +14,13 @@ const Text = styled.div`
 export default function Home() {
   return (
     <Container>
-      test
-      <Text color='red'>Hello!!</Text>
+      <Content headerTitle="header">
+        test
+        <Text color='red'>Hello!!</Text>
+        <Link href='/about' passHref>
+          <button>about</button>
+        </Link>
+      </Content>
     </Container>
   );
 }
